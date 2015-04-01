@@ -25,3 +25,11 @@ X = [ones(N,1) X];  %Añadimos una columna de "unos"
 % Modificamos los targers
 Tn = T;
 Tn(Tn==0) = -1;
+
+%% Se crea la matriz de X con una columna inicial de unos
+% se crea la matriz de W
+% se multiplica X*W
+% Y=f(A) 
+
+
+
