@@ -14,14 +14,5 @@ x4 = [1 1]; t4 = 0;
 X=[x1;x2;x3;x4];
 T=[t1;t2;t3;t4];
 N = length(T);
-grid on
-hold on
-for i=1:N
-    if (T(i)==0)
-        plot(X(i,1),X(i,2),'gx','MarkerSize',10,'LineWidth',2);
-    elseif (T(i)==1)
-        plot(X(i,1),X(i,2),'bo','MarkerSize',10,'LineWidth',2);
-    end
-end
 
-axis([-2 2 -2 2]);
+plotData(X,T,1);
