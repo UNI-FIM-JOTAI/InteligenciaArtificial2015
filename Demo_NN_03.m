@@ -32,3 +32,12 @@ Y = NN_regression(Theta1, Theta2, X);
 disp('Salida de la red');
 disp(Y)
 plot(X,Y)
+
+%% Error
+Number_in = size(X,2);
+Number_hidden = size(Theta2,1)-1;
+Number_out = size(Theta2,2);
+T = [ones(N,1) ones(N,1)];
+NN_params = [Theta1(:); Theta2(:)];
+[E grad] = NN_Error_Regression(NN_params, Number_in,...
+    Number_hidden,Number_out, X, T);
