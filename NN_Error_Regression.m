@@ -29,7 +29,7 @@ Theta2 = reshape(NN_params((Number_in + 1)*Number_hidden + 1:end),...
 
 %% CALCULO DEL ERROR
 %2.1 SALIDA DE LA RED
-Y = NN_regression(Theta1, Theta2; x);
+Y = NN_regression(Theta1, Theta2, X);
 
 % 2.2 Error cuadratico
 E = (Y-T).^2;
