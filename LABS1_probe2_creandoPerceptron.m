@@ -70,3 +70,4 @@ plotpc(wf,bf,h); % h es un handel grafico (teoria GUIDE)
 % P = [1 -1 -1 1
 %      1 1 -1 -1]
 % T = [-1 -1 -1 1]
+% plotear el error MAE
