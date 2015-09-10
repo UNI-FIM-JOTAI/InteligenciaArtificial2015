@@ -7,6 +7,7 @@ p = [1 0]'; % vector paralelo input
 w = [0.1 1]; % vector de pesos sinapticos
 b = -0.2; % bias (peso umbral)
 n=w*p+b; % nivel de activacion
+a=purelin(n);
 disp('activacion');
 disp(n);
 disp('salida');
