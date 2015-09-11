@@ -15,10 +15,6 @@ clear all; close all; clc;
 P= [1 -1 -1 1
     1 1 -1 -1];
 T= [-1 -1 -1 1];
-Pn = P;
-Pn(Pn==-1)=0;
-Tn = T;
-Tn(Tn==-1)=0;
 
 %% Creando perceptron
 PR = minmax(P); %dim de R2 valores input con los valores minimos y maximos 

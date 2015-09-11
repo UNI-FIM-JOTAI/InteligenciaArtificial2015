@@ -27,11 +27,12 @@ net.b{1} = b;
 % (3) espacio inicial de patrones
 figure(1)
 % grafica el vector de entrada/target del perceptron
-plotpv(P,T)
+%plotpv(P,T)
+plotData(P',T',1);
 % grafica la linea de clasificacion de un perceptron
 h=plotpc(net.iw{1,1}, net.b{1});
 % establece los limites en X y Y de la grafica
-axis([-1 2 -2 2])
+%axis([-1 2 -2 2])
 
 %% entrenamiento de la red
 % entrena la red neuronal utilizando el input P y los target T

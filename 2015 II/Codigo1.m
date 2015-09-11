@@ -4,7 +4,7 @@ P=[2  1 -2 -1
    2 -2  2  1];
 T=[0 1 0 1];
 % Espacio de patrones (inicial)
-Plotpv(P,T)
+plotpv(P,T)
 % Crea el perceptron
 net = newp(minmax(P),1);
 wi=rand(1,2);  % Teoria de Gupta wi=[-1,1]
@@ -38,3 +38,4 @@ wf=net.iw{1,1};
 bf=net.b{1};
 pause(3)
 plotpc(wf,bf,h)
+

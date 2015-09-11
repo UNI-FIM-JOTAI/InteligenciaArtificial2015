@@ -4,7 +4,7 @@ function plotData(X,T,marco)
     grid on
     hold on
     for i=1:N
-        if (T(i)==-1)
+        if ((T(i)==-1)|(T(i)==0))
             plot(X(i,1),X(i,2),'gx','MarkerSize',10,'LineWidth',2);
         elseif (T(i)==1)
             plot(X(i,1),X(i,2),'bo','MarkerSize',10,'LineWidth',2);
