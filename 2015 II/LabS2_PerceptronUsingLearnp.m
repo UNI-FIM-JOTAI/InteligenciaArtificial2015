@@ -12,8 +12,12 @@ h=plotpc(w(1,1:2),w(1,3));
 nepoc=0;
 y=hardlim(w*P);
 while any(y~=T)
-    y=hardlim(w*P);
+    % se analiza las salidas con la funcion transferencia Hard-Limit
+    y=hardlim(w*P)
+    % se observa el error
     e=T-y;
+    % funcion de aprendizaje de los pesos y el bias, obtiene la variacion
+    % de w
     dw=learnp([],P,[],[],[],[],e,[],[],[],[],[]);
     % la celda [] no es usada
     w=w+dw; % regla update del algoritmo
