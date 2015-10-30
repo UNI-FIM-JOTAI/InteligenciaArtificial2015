@@ -2,6 +2,7 @@
 clear all, close all, clc
 X=0:0.01:10;    % Universo de discurso
 c=[1 3 5];      % Control
+% se puede utilizar el trimf trapmf gaussmf - se puede buscar en MatWorks
 A=trimf(X,c);
 % y/o Fch de Membresia
 plot(X,A)
